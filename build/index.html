@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>melonJS Boilerplate</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+        <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon" href="icons/touch-icon-iphone-60x60.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="icons/touch-icon-ipad-76x76.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="icons/touch-icon-iphone-retina-120x120.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="icons/touch-icon-ipad-retina-152x152.png">
+        <link rel="manifest" href="manifest.json">
+    </head>
+    <body>
+        <!-- Canvas placeholder -->
+        <div id="screen" style="float: left;"></div>
+
+        <!-- an optional ES5-Shim
+        <script type="text/javascript" src="lib/es5-shim.min.js"></script>
+        -->
+
+        <!-- melonJS Library -->
+        <script src="js/app.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script type="text/javascript">
+            me.device.onReady(function onReady() {
+                game.onload();
+            });
+        </script>
+        
+        
+
+        <style type='text/css'>
+        * { text-align: right }
+            body {
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                background-color:#090107;
+                color:#ffffb1;
+                font-family:"Arial", Arial, sans-serif;
+
+            }
+            p {
+                font-size:14px;
+                letter-spacing:1px;
+                line-height:20px;
+                text-align: left;
+            }
+			#instructions {
+                text-align: right;
+                margin: 0 auto;
+                width: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='instructions' style="float: right;">
+        </div>
+        <p> If your castle is destroyed, you lose! Destroy the opponent's castle to win!<br/><br/>
+        	Left click to select a unit, or drag to select multiple.<br/><br/>
+        	Right click to order selected units to move, attack, or mine gold (peasants only).<br/><br/>
+            Each mining peasant increases your gold per 5 seconds by 2.<br/><br/>
+            Each building periodically creates units, up to 8 units for that building type.<br/><br/>
+            Additional buildings of the same type will increase the maximum possible units of that type by an additional 8.<br/><br/>
+            AVAILABLE BUILDINGS:<br/> (Select a peasant and press key)<br/>
+            T - Tavern - Recruits - 100g<br/>
+            B - Barracks - Knights - 150g<br/>
+            R - Range - Archers - 200g<br/>
+            H - Horse Stables - Cavalry - 250g<br/>
+        </p>
+    </body>
+
+
+    </body>
+</html>
